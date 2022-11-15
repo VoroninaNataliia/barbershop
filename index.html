@@ -8,15 +8,14 @@
 </head>
 
 <body>
+    <!-- все svg-изображения переписать через svg - use -->
+    <!--все "полосочки" вставлять через before илил after и как svg?-->
+    <!--текст рядом с полосочками как svg или это стилизированный текст?-->
     <header>
-        <a href="#"><img src="./images/logo.svg" width="69" height="56"/></a>
-        <ul>
-            <li><a href="#" rel="nofollow noopener noreferrer" target="_blank">instagram</a></li>
-            <li><a href="#" rel="nofollow noopener noreferrer" target="_blank">youtube</a></li>
-        </ul>
-
+        <a href="./index.html"><img src="./images/logo.svg" alt="logo of company" width="69" height="56"/></a>
+    
         <nav>
-            <ul>
+            <ul><!--id и якоря задать черерз классы в css или ссылки?-->
                 <li>about</li>
                 <li>services and prices</li>
                 <li>barbers</li>
@@ -25,30 +24,33 @@
         </nav>
 
         <a href="tel:+380441111111">+38 044 111 11 11</a>
+        <!--id и якорь задать черерз класс или в этом же месте всплывающая модалка?-->
         <button class="button">online-booking</button>
+
+    <section>
+        <ul> <!--изображения или стилизированный текст?-->
+            <li><a href="#" rel="nofollow noopener noreferrer" target="_blank"><img src="./images/header-youtube.svg" alt="youtube" width="15" height="58"/></a></li>
+            <li><a href="#" rel="nofollow noopener noreferrer" target="_blank"><img src="./images/header-instagram.svg" alt="instagram" width="15" height="75"/></a></li>
+            <li><img src="./images/header-line.svg" alt="line" width="1" height="60"/> </li>
+        </ul>
+    </section>
 
     </header>
 
     <main>
         <section>
             <span>a hair salon for men in kyiv</span>
-
             <h1>barbershop</h1>
-
             <p>we are experts in trendy men’s haircuts. we work quickly, carefully and with style</p>  
-
-                <ul>
-                    <li><a>back</a></li>
-                    <li><a>forward</a></li>
+                <ul><!--куда ведут ссылки, если это одностраничный лэндинг?-->
+                    <li><a href="./index.html">back</a></li>
+                    <li><a href="#">forward</a></li>
                 </ul>   
-
         </section>
 
-
         <section>
-
-            <img src="./images/1shaving.jpg" width="270" height="445">
-            <img src="./images/1haircutting.jpg" width="270" height="445">
+            <img src="./images/1shaving.jpg" alt="shaving process" width="270" height="445">
+            <img src="./images/1haircutting.jpg" alt="haircutting process" width="270" height="445">
 
             <span>about</span>
 
@@ -66,7 +68,7 @@
             <span>spend your time with the best masters</span>
 
             <h2>services and prices</h2>
-            
+            <!--или таблица? или вложить в li по 2 div? и черерз флексы спозиционировать их по краям?-->
             <ul>
                 <li></li>
                 <li></li>
@@ -156,17 +158,39 @@
             <h2>at work</h2>
             <span>in Latin, "barba" means "beard"</span>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><img src="./images/5-at-work-1.jpg" alt="haircutting" width="270" height="360"/></li>
+                <li><img src="./images/5-at-work-2.jpg" alt="shaving" width="270" height="360"/></li>
+                <li><img src="./images/5-at-work-3.jpg" alt="face-spa" width="270" height="360"/></li>
+                <li><img src="./images/5-at-work-4.jpg" alt="haircutting finishing" width="270" height="360"/></li>
             </ul>
-        </section>
-        
-        <section></section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <section>
+            <p>online-booking</p>
+            <form></form>
+        </section>
+        <section>
+            <p>contacts</p>
+            <address>st. Vasilkovaya, 7A Kiev, 08132</address>
+            <ul>
+                <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+                <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+            </ul>
+            <span>working hours</span>
+            <p>every day from 9:00 to 22:00</p>
+        </section>
+        <span></span>
+        <section>
+            <p>&copy; Copyright 2020</p>
+            <ul>
+                <!--или стилизированный текст?-->
+                <li><img src="./images/header-line.svg" alt="line" width="1" height="60"/> </li>
+                <li><a href="#" rel="nofollow noopener noreferrer" target="_blank"><img src="./images/header-instagram.svg" alt="instagram" width="15" height="75"/></a></li>
+                <li><a href="#" rel="nofollow noopener noreferrer" target="_blank"><img src="./images/header-youtube.svg" alt="youtube" width="15" height="58"/></a></li>
+            </ul>
+    </section>
+    </footer>
     
 </body>
 </html>
